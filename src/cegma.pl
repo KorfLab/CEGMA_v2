@@ -249,6 +249,10 @@ if ($cutoff_file eq "$CEGMA/data/profiles_cutoff.tbl") {
 ## Removing temporary files
 &clean_tmp() unless $temp_flg;
 
+&print_header("CEGMA HAS FINISHED");
+
+
+
 exit(0);
 
 
