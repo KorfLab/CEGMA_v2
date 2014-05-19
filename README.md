@@ -2,6 +2,8 @@
 
 Released: 2014-05-19
 
+https://zenodo.org/badge/4042/KorfLab/CEGMA_v2.png
+
 ### Contents ###
 
 + A. What's CEGMA ?
