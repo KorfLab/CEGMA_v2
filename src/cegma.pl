@@ -540,7 +540,8 @@ sub Which_Options() {
 sub print_help() {
     open(HELP, "| cat") ;
     print HELP <<"+++EndOfHelp+++";
-                                                                     $PROGRAM
+
+                              $PROGRAM
 
 
 PROGRAM:
@@ -665,7 +666,7 @@ AUTHOR:
 
 
 
-GNU-GPL (C)                      November 2006                         $PROGRAM
+GNU-GPL (C)                      May 2014                         $PROGRAM
 +++EndOfHelp+++
     close(HELP);
     exit(1);
