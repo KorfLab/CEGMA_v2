@@ -2,14 +2,15 @@
 
 Released: 2014-05-19
 
-Summary:
-A. What's CEGMA ?
-B. Installing CEGMA
-C. File Listing
-D. Compiling CEGMA
-E. To run CEGMA
-F. Authors and help
-G. Citing CEGMA
+### Contents ###
+
++ A. What's CEGMA ?
++ B. Installing CEGMA
++ C. File Listing
++ D. Compiling CEGMA
++ E. To run CEGMA
++ F. Authors and help
++ G. Citing CEGMA
 
 ***************************************
 
