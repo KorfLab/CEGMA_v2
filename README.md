@@ -2,7 +2,7 @@
 
 Released: 2014-05-19
 
-![DOI 10.5281](https://zenodo.org/badge/4042/KorfLab/CEGMA_v2.png)
+[![DOI 10.5281](https://zenodo.org/badge/4042/KorfLab/CEGMA_v2.png)](https://zenodo.org/deposit/6329/)
 
 ### Contents ###
 
