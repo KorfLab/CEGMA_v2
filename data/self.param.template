@@ -1,0 +1,94 @@
+# geneid parameter file: Eukarotyc parameter file
+# Comment lines must begin with '#'
+
+# Non-homology penalty
+NO_SCORE
+-0.15
+
+# Number of isochores
+number_of_isochores
+1
+
+# PARAMETERS FROM ISOCHORE 1
+
+# %GC
+boundaries_of_isochore
+0  100
+
+# Exons score: cutoffs
+Absolute_cutoff_exons
+-150 -150 -150 -150
+
+Coding_cutoff_oligos
+-100 -150 -150 -150
+
+# Exon s core: factors
+Site_factor
+1 1 1 1
+
+Exon_factor
+0.5 0.5 0.5 0.5
+
+HSP_factor
+0.5 0.5 0.5 0.5
+
+Exon_weigths
+-8.5 -8.5 -8.5 -8.5
+
+# Site prediction: Position Weight Arrays
+# Lenght, Offset, Cutoff and order (Markov model)
+Start_profile
+9 4 -5 0
+# These are the transition probabilities
+Start_matrix
+
+Acceptor_profile
+22 19 -7 0
+# Transition probabilities at every position
+Acceptor_matrix
+
+Donor_profile
+13 2 -7.5 0
+# Transition probabilities at every position
+Donor_matrix
+
+Stop_profile
+4 0 -9999 0
+# Transition probabilities at every position
+1 A 0
+1 C 0
+1 G 0
+1 T 0
+2 A -9999
+2 C -9999
+2 G -9999
+2 T 0.000
+3 A 0.000
+3 C -9999
+3 G 0.000
+3 T -9999
+4 A 0.000
+4 C -9999
+4 G 0.000
+4 T -9999  
+
+# Exon prediction: Markov model
+# Initial probabilities at every codon position
+Markov_oligo_logs_file
+5
+Markov_Initial_probability_matrix
+
+# Transition probabilities at every codon position
+Markov_Transition_probability_matrix
+
+# Donors per acceptor to build exons
+maximum_number_of_donors_per_acceptor_site
+5
+
+# GENE MODEL: Rules about gene assembling (GenAmic)
+General_Gene_Model
+# INTRAgenic connections
+# BEGINNING and END of prediction
+Begin+                                      First+:Single+         0:Infinity
+Terminal+:Single+                           End+                   0:Infinity
+Begin-                                      End-                   0:Infinity
