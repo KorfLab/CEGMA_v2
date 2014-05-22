@@ -60,15 +60,28 @@ Type:
 After executing these commands, the directory 'cegma_v2.5' will be created 
 in your working directory. 
 
-CEGMA needs the pre-installation of the following software:
+CEGMA requires the pre-installation of the following software:
 
 - [geneid (geneid v1.4)](http://genome.imim.es/software/geneid/)
-- [genewise (wise2.2.3-rc7)](http://www.ebi.ac.uk/Wise2/) or [use our copy](http://korflab.ucdavis.edu/Datasets/cegma/wise2.2.3-rc7.tar.gz)
+- [genewise (wise2.2.3-rc7)](http://www.ebi.ac.uk/~birney/wise2/) or [use our copy](http://korflab.ucdavis.edu/Datasets/cegma/wise2.2.3-rc7.tar.gz)
 - [hmmer (HMMER v3.0)](http://hmmer.janelia.org/)
-- [NCBI BLAST+ (tested using v2.2.29)](ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/)
+- [NCBI BLAST+ (tested using v2.2.29)](http://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download)
 
-Note that genewise requires glib to be present for correct installation
+CEGMA has proved difficult to install on some Linux systems, these two guides that list
+how CEGMA was installed on Ubuntu might be therefore helpful:
 
++ [Guide 1](http://korflab.ucdavis.edu/Datasets/cegma/ubuntu_instructions_1.txt) (kindly provided by Markus Grohme).
++ [Guide 2](http://korflab.ucdavis.edu/Datasets/cegma/ubuntu_instructions_2.txt) (kindly provided by Christoph Hahn).
+
+
+#### Installing GeneWise ####
+
+To install Genewise, you will also need to have glib installed (which can be installed on 
+a Mac via utilities such as [Macports](https://www.macports.org) or [Homebrew](http://brew.sh). 
+
+On an Ubuntu Linux system, you should also be able to install GeneWise by running:
+
+	sudo apt-get install wise
 
 
 
