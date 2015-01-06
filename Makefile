@@ -145,35 +145,35 @@ $(BIN) :
 
 $(addprefix $(BIN)/, $(CEGMA)) : $(addprefix $(SRC)/, $(CEGMA).pl)
 	@echo "### Finishing PERL script from \"$<\" -> \"$@\"" ;
-	@( echo "#!$(PERL) -w"; cat $< ) > $@;
+	@(sed '1c\#!$(PERL)' $<) > $@
 
 $(addprefix $(BIN)/, $(LOCAL_MAP)) : $(addprefix $(SRC)/, $(LOCAL_MAP).pl)
 	@echo "### Finishing PERL script from \"$<\" -> \"$@\"" ;
-	@( echo "#!$(PERL) -w"; cat $< ) > $@;
+	@(sed '1c\#!$(PERL)' $<) > $@
 
 $(addprefix $(BIN)/, $(GENOME_MAP)) : $(addprefix $(SRC)/, $(GENOME_MAP).pl)
 	@echo "### Finishing PERL script from \"$<\" -> \"$@\"" ;
-	@( echo "#!$(PERL) -w"; cat $< ) > $@;
+	@(sed '1c\#!$(PERL)' $<) > $@
 
 $(addprefix $(BIN)/, parsewise) : $(addprefix $(SRC)/, parsewise.pl)
 	@echo "### Finishing PERL script from \"$<\" -> \"$@\"" ;
-	@( echo "#!$(PERL) -w"; cat $< ) > $@;
+	@(sed '1c\#!$(PERL)' $<) > $@
 
 $(addprefix $(BIN)/, hmm_select) : $(addprefix $(SRC)/, hmm_select.pl)
 	@echo "### Finishing PERL script from \"$<\" -> \"$@\"" ;
-	@( echo "#!$(PERL) -w"; cat $< ) > $@;
+	@(sed '1c\#!$(PERL)' $<) > $@
 
 $(addprefix $(BIN)/, completeness) : $(addprefix $(SRC)/, completeness.pl)
 	@echo "### Finishing PERL script from \"$<\" -> \"$@\"" ;
-	@( echo "#!$(PERL) -w"; cat $< ) > $@;
+	@(sed '1c\#!$(PERL)' $<) > $@
 
 $(addprefix $(BIN)/, geneid-train) : $(addprefix $(SRC)/, geneid-train.pl)
 	@echo "### Finishing PERL script from \"$<\" -> \"$@\"" ;
-	@( echo "#!$(PERL)"; cat $< ) > $@;
+	@(sed '1c\#!$(PERL)' $<) > $@
 
 $(addprefix $(BIN)/, make_paramfile) : $(addprefix $(SRC)/, make_paramfile.pl)
 	@echo "### Finishing PERL script from \"$<\" -> \"$@\"" ;
-	@( echo "#!$(PERL) -w"; cat $< ) > $@;
+	@(sed '1c\#!$(PERL)' $<) > $@
 
 
 isexec : $(BINCODE)
