@@ -138,7 +138,7 @@ while (my $prot_entry = $PROT->nextEntry) {
     if (!($TBLASTN_GFF_FILE)) {
 		# running blast
 		system ("tblastn -db $BLASTDB -query $TMP/prot$$.fa \\
-	             -word_size 5 -max_target_seqs 5 -seg yes -num_threads $THREADS -lcase_masking \\
+	             -word_size 6 -max_target_seqs 5 -seg yes -num_threads $THREADS -lcase_masking \\
 				 -outfmt \"7 sseqid sstart send sframe bitscore qseqid\"\\
 	             > $TMP/blast$$") && die "Can't run tblastn\n";
 
